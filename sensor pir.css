@@ -1,0 +1,22 @@
+#define SENSOR_PIR 2
+#define LED 3
+
+void setup() {
+  pinMode(SENSOR_PIR, INPUT);
+  pinMode(LED, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  bool estado_sensor = digitalRead(SENSOR_PIR);
+
+  if (estado_sensor == HIGH) {
+    digitalWrite(LED, HIGH);
+    Serial.println("MOVIMENTO DETECTADO ✓");
+  } else {
+    digitalWrite(LED, LOW);
+    Serial.println("SEM MOVIMENTO ☓");
+  }
+
+  delay(200);  // Pequeno atraso para evitar spam no Serial Monitor
+}
