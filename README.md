@@ -18,4 +18,4 @@ Materiais: 1x Protoboard
            11x Jumpers
 
 
-OBSERVAÇÃO: O código no VS CODE está mostrando errado porém colocado ele diretamente no ARDUINO IDE funciona perfeitamente.
+OBSERVAÇÃO: O código no VS CODE está mostrando errado porém! colocado ele diretamente no ARDUINO IDE funciona perfeitamente.
